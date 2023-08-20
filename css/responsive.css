@@ -1,0 +1,81 @@
+@media only screen  and (min-width:100px) and (max-width: 1200px) {
+    .coin-box{
+      margin: 10px 0;
+    }
+    .feat-card{
+        margin: 15px 0;
+    }
+    .footer-content{
+        margin: 15px 0;
+    }
+}
+@media only screen and (min-width: 100px) and (max-width: 900px) {
+    .search-logo .search-bar input{
+        width: 100%;
+    }
+    .main-menu nav{
+        display: none;
+    }
+    .nft-content h1 {
+        font-size: 50px;
+    }
+    .nft-desc .seller-img{
+        left: 42%;
+    }
+    .coin-box-inner{
+        padding: 30px 10px;
+    }
+    .coin-box a:hover .coin-box-inner{
+        transform: scale(1.01);
+    }
+    .social-icons ul{
+        justify-content: start;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .img-sec{
+        padding: 70px 0;
+    }
+    .main-menu nav{
+        display: none;
+    }
+    .hamburger-icon{
+        display: block;
+    }
+}
+@media only screen and (min-width:100px) and (max-width: 600px) {
+    .nft-content h1{
+        font-size: 35px;
+    }
+    .profile{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .mobile-menu-body ul li ul{
+        width: 120px;
+    }
+    .mobile-menu-body ul li ul li a{
+        font-size: 13px;
+        padding: 10px 5%;
+    }
+    .item-desc a{
+        font-size: 18px;
+    }
+    .nft-desc .seller-img{
+        left: 42%;
+    }
+    .coin-box-inner{
+        padding: 30px 0;
+    }
+    .close-icon{
+        top: 35px;
+        right: 45px;
+    }
+    
+    .search-logo .search-bar input{
+        display: none;
+    }
+    .seller{
+        justify-content: center;
+    }
+}

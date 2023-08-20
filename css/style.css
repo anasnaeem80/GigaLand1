@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --heading-font:"Montserrat", Helvetica, Arial, sans-serif;
+    --body-font: "Raleway", Helvetica, Arial, sans-serif;
+    --body-color:#1a1a25;
+}
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+    font-family: var(--heading-font);
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+input,button{
+    border: 0;
+    outline: 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.header{
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.search-logo .logo img{
+    width: 35px;
+    height: 35px;
+}
+.search-logo{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.search-logo .search-bar input{
+    border: 0;
+    width: 280px;
+    padding: 4px 14px;
+    border-radius: 72px;
+    background: rgba(255, 255, 255, .2) !important;
+}
+.search-logo .search-bar input:focus {
+    outline: 0;
+}
+.search-logo .search-bar input::placeholder{
+    color: #fff;
+}
+.main-menu nav > ul{
+    display: flex;
+    column-gap: 17px;
+}
+.main-menu nav ul li a{
+    color: white;
+}
+.main-menu nav ul li a i{
+    color: #ffffff80;
+}
+.main-menu nav ul li a i {
+    padding-left: 10px;
+    font-size: 10px;
+}
+.main-menu nav ul li {
+    position: relative;
+}
+.main-menu nav > ul > li::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--bs-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all .7s;
+}
+.main-menu nav ul li:hover::before {
+    transform: scaleX(1);
+}
+.main-menu {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    align-items: center;
+    font-family: var(--body-font);
+    font-weight: 800;
+    font-size: 14px;
+}
+.head-btn a {
+    color: white;
+    padding: 3px 25px;
+    background: linear-gradient(to right, #2e83d0 0%, #eb388f 100%);
+    border-radius: 28px;
+}
+.img-sec {
+    padding:30px 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.page{
+    background-color:var(--body-color);
+    color: #fff;
+    padding: 50px 0;
+}
+.feat-card{
+    padding: 50px 25px;
+    border: 1px solid #ffffff1a;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.feat-card .feat-text{
+    text-align: center;
+}
+.heading h2 {
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+.feat-icon {
+    width: 60px;
+    line-height: 60px;
+    height: 60px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background: linear-gradient(to right, #2e83d0 0%, #eb388f 100%);
+}
+.feat-card .feat-icon i {
+    font-size: 20px;
+}
+.heading h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 47%;
+    background: linear-gradient(to right, #2e83d0 0%, #eb388f 100%);
+    width: 50px;
+    height: 2px;
+}
+.feat-card .feat-text h3 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+.feat-card .feat-text p {
+    color: #a2a2a2;
+}
+.coin-box a {
+    display: block;
+    color: #fff;
+    background: linear-gradient(to right, #2e83d0 0%, #eb388f 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all .9s;
+}
+.coin-box-inner {
+    background: #242435;
+    padding: 30px 20px;
+    transform: scale(1);
+    transition: all .9s;
+}
+.coin-box .coin-name h4 {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+.coin-box .coin-img {
+    width: 84px;
+    margin: 0 auto;
+}
+.coin-box a:hover .coin-box-inner {
+    transform: scale(1.3);
+    background: #ffffff00;
+}
+footer{
+    background-color: #242435;
+}
+.footer-content h4 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.footer-content ul li a {
+    color: #a2a2a2;
+    margin-bottom: 8px;
+    transition: color .5s;
+}
+.footer-content ul li a:hover {
+    color: var(--bs-primary);
+}
+.social-icons ul {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+.social-icons ul li a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    text-align: center;
+    background-color: #1a1a25;
+    border-radius: 8px;
+    transition: all .5s;
+}
+.top-footer {
+    padding: 50px 0;
+}
+.bottom-footer {
+    color: #fff;
+    padding: 30px 0;
+    border-top: 1px solid #a2a2a2 ;
+}
+.bottom-footer a{
+    color: #a2a2a2;
+}
+.social-icons ul li a:hover {
+    background-color: #fff;
+}
+
+.social-icons ul li a:hover i {
+    color: var(--bs-primary);
+}
+.footer-content p {
+    color: #a2a2a2;
+    margin-bottom: 20px;
+}
+.footer-content input {
+    background-color: #ffffff1a;
+    color: #fff;
+    width: 80%;
+    padding: 5px 10px;
+    border-radius: 8px 0 0 8px;
+}
+.footer-content input::placeholder {
+    color: #fff;
+}
+.footer-content button {
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 0 8px 8px 0;
+    background: linear-gradient(to right, #2e83d0 0%, #eb388f 100%);
+    color: #fff;
+    width: 20%;
+}
+.nft-content {
+    color: #fff;
+}
+.nft-content h6 {
+    font-weight: 700;
+    letter-spacing: 12px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.nft-content h1 {
+    font-size: 72px;
+    font-weight: 700;
+}
+.nft-content p {
+    margin: 20px 0;
+    font-weight: 700;
+}
+.nft-content .numbers p {
+    margin: 0 0 30px 0;
+}
+.nft-content .numbers h3 {
+    font-size: 26px;
+    font-weight: 700;
+}
+.main-menu nav ul li ul {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: 160px;
+    background-color: #14141fe6;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+.main-menu nav ul li:hover ul{visibility: visible;opacity: 1;}
+.main-menu nav ul li ul li a {
+    width: 100%;
+    font-weight: 400;
+    padding: 10px 10px;
+}
+.main-menu nav ul li ul li a:hover {
+    background: linear-gradient(to right, #2e83d0 0%, #eb388f 100%);
+}
+.nft-desc {
+    text-align: center;
+    padding: 25px 0;
+    position: relative;
+}
+.nft-col {
+    background-color: #242435;
+    border-radius: 0 0 8px 8px;
+    margin: 0 15px;
+}
+.nft-img img {
+    border-radius: 8px 8px 0 0;
+    transform: scale(1);
+    transition: all .7s;
+}
+.nft-desc a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.nft-desc p {
+    color: #a2a2a2;
+}
+.nft-img {
+    overflow: hidden;
+}
+.nft-img:hover img {
+    transform: scale(1.03);
+}
+form {
+    position: relative;
+}
+.slick-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    left: 0;
+}
+.slick-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.slick-arrow{
+    display: flex;
+    width: 45px;
+    height: 45px;
+    background-color: #1a1a25;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #a2a2a2;
+    color: #fff;
+    cursor: pointer;
+}
+.item-desc a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+}
+.item {
+    background-color: #242435;
+    padding: 25px 13px;
+    border-radius: 15px;
+    position: relative;
+}
+.item .item-img img {
+    border-radius: 8px;
+    transform: scale(1);
+    transition: all .5s;
+}
+.item:hover .item-img img {
+    transform: scale(1.03);
+}
+.item-desc {
+    margin-top: 15px;
+}
+.item-desc p {
+    color: #a2a2a2;
+    font-weight: 600;
+    font-size: 14px;
+}
+.item-desc p span {
+    color: #fff;
+}
+.heading h2 span {
+    background: linear-gradient(to right, #2e83d0 0%, #eb388f 100%);
+    -webkit-background-clip:text;
+    background-clip:text ;
+    -webkit-text-fill-color: transparent;
+}
+.seller {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.seller-img a img{
+    width: 50px;
+    border-radius: 100%;
+    transition: all .3s;
+}
+.seller-img a:hover img{
+    padding: 4px;
+    background: linear-gradient(to right, #2e83d0 0%, #eb388f 100%); 
+}
+.seller-desc p {
+    color: #a2a2a2;
+    font-size: 14px;
+}
+.seller-desc h4 {
+    font-weight: 700;
+    font-size: 16px;
+}
+.item-action {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.item-action a {
+    color: var(--bs-primary);
+    font-weight: bold;
+    font-size: 15px;
+}
+.item-action .like i {
+    color: #ffffff33;
+    transition: all .5s;
+}
+.item-action .like i:hover {
+    color: #e70028;
+}
+.up-icon {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.up-icon a {
+    background: linear-gradient(to right, #2e83d0 0%, #eb388f 100%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 15px;
+    transition: all .5s;
+}
+.up-icon a:hover {
+    color: var(--bs-primary);
+}
+ul.slick-dots{
+    display: none!important;
+}
+.header.fixed {
+    background-color: #1a1a25;
+    box-shadow: 0 1px 4px 2px #000;
+    opacity: 0.9;
+}
+.up-icon.active {
+    bottom: 100%;
+    opacity: 0;
+}
+.search-logo .search-bar input:hover {
+    box-shadow: 0px 0px 1px 3px #792d8d;
+}
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+    z-index: 2;
+}
+.mobile-menu-body {
+    background-color: #2c2c36;
+    padding: 100px 80px;
+    height: 100%;
+}
+.mobile-menu-body ul li a {
+    color: #fff;
+    font-size: 23px;
+}
+.close-icon {
+    position: absolute;
+    top: 24px;
+    right: 110px;
+    font-size: 40px;
+}
+.mobile-menu.active {
+    left: 0;
+}
+.nft-desc .seller-img {
+    position: absolute;
+    top: -30px;
+    left: 39%;
+}
+.nft-desc .seller-img i {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    background: linear-gradient(to right, #2e83d0 0%, #eb388f 100%);
+    color: #fff;
+    border-radius: 50%;
+    width: 18px;
+    line-height: 18px;
+    font-size: 10px;
+}
+/* homepage 2 Css Start */
+.hero{
+    padding: 90px 0;
+    background: #171722;
+}
+.hover-item a{
+    display: block;
+    overflow: hidden;
+    margin: 0 10px;
+}
+.hover-item .hover-img img{
+    border-radius: 10px;
+    transition: all 2s;
+}
+.hover-item:hover a .hover-img img{
+    transform: scale(1.2);
+}
+.hover-item {
+    position: relative;
+}
+.hover-con {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 22px;
+    color: #fff;
+    font-size: 15px;
+}
+.hover-con h3{
+    font-size: 22px;
+    font-weight: 600;
+}
+.item-img a {
+    display: block;
+}
+.bg-color{
+    background: linear-gradient(to right, #c5269d 0%, #8505ab 100%);
+}
+.feat-card:hover .feat-text{
+    color: #fff;
+}
+.feat-tr-icon {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    font-size: 203px;
+    z-index: -1;
+    color: #9e12a536;
+    transition: all 1.5s;
+}
+.feat-card:hover .feat-tr-icon {
+    transform: rotate(-25deg);
+}
+.exp{
+    padding: 110px 0;
+    background: rgb(36 39 43);
+    border-bottom: 1px solid #9c9898;
+}
+.exp-heading h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+.home-2.main-menu nav > ul > li::before{
+    background: #c5269d;
+}
+.main-menu.home-2 .head-btn a{
+    background: linear-gradient(to right, #c5269d 0%, #8505ab 100%);
+}
+.main-menu.home-2 nav ul li ul li a:hover{
+    background: linear-gradient(to right, #c5269d 0%, #8505ab 100%);
+}
+.coin-box.exp-clr a{
+    background: linear-gradient(to right, #c5269d 0%, #8505ab 100%);
+}
+.create .feat-card{
+    background: #242435;
+    border-radius: 0;
+}
+.img-set .item-img img{
+    height: 266px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+.footer-content.exp-clr button{
+    background: linear-gradient(to right, #c5269d 0%, #8505ab 100%);
+}
+.up-icon.exp-clr a{
+    background: linear-gradient(to right, #c5269d 0%, #8505ab 100%);
+}
+.hamburger-icon{
+    display: none;
+}
+.item .seller-img {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 1;
+}
+.items.page{
+    background: #24272b;
+}
+.items .item{
+    background-color: #24272b;
+    box-shadow: 0px 1px 4px 0px #000;
+}
+.hover-con p {
+    font-size: 18px;
+}
+.footer .footer-content ul li a:hover{
+    color: red;
+}
+.footer{
+    background:#24272b;
+    border-top: 1px solid #a2a2a2;
+}
+.footer .footer-content button{
+    background: red;
+}
+.head-btn.exp-clr a {
+    background: red;
+}
+.seller-profile .seller-img img {
+    width: 150px;
+    border-radius: 50%;
+}
+.Sellers {
+    padding: 150px 0;
+    background-color: #212428;
+}
+
+.seller-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.seller-profile .seller-desc {
+    color: #fff;
+}
+.seller-profile .seller-desc span {
+    color: red;
+}
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.profile .follow-info {
+    color: #fff;
+}
+.profile .follow-info a {
+    color: #fff;
+    padding: 3px 42px;
+    background: red;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+.nav-tabs{
+    margin: 10px 0;
+    border: none;
+}
+.nav-tabs .nav-link{
+    color: #a2a2a2;
+    border: solid 1px #ffffff1a;
+    margin: 0 6px;
+    border-radius: 3px;
+}
+.nav-tabs .nav-link.active{
+    color: #fff;
+    background: none;
+    font-weight: 600;
+}
+.mobile-menu-body > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.mobile-menu-body ul li {
+    position: relative;
+}
+.mobile-menu-body ul li ul {
+    position: absolute;
+    top: 33px;
+    left: 77px;
+    width: 180px;
+    background-color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+.mobile-menu-body ul li ul li a {
+    width: 100%;
+    padding: 10px 11%;
+}
+.mobile-menu-body ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+.product-sec.page {
+    padding: 130px 0;
+}
+.product-desc h1 {
+    font-weight: 600;
+    margin: 21px 0;
+}
+.product-desc p {
+    color: #a2a2a2;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 19px;
+}
+.prod-box {
+    text-align: center;
+    border: 1.5px solid #4e4e4e;
+    padding: 15px 0;
+    margin: 5px 0;
+}
+
+.prod-box h4 {
+    color: #ff0048;
+    font-size: 15px;
+}
+.prod-box h6 {
+    margin: 5px 0;
+}
+.prod-box p {
+    font-size: 14px;
+    margin: 0;
+}
+.product-prop h6 {
+    margin: 8px 0 8px 0;
+}
+.nft-item-price img{
+    width: 30px;
+    margin: 0;
+    display: inline-block;
+}
+.nft-item-price span {
+    font-weight: bold;
+    font-size: 28px;
+    padding-left: 15px;
+    display: inline-block;
+}
+
+.nft-item-price {
+    margin-top: 25px;
+}
